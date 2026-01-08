@@ -29,12 +29,11 @@ driver.get(website)
 
 actions = [
     "(//div[@class='layout-oI7yDzzq'])[1]",
-    "(//span[normalize-space()='Die gesamte Welt'])[1]",
-    "(//div[@class='layout-oI7yDzzq'])[1]",
-    "(//div[@class='title-LSK1huUA ellipsis-K3hWbfcy apply-overflow-tooltip'])",
-    "(//div[normalize-space()='Italien'])[1]",
+    "(//div[contains(text(),'Weitere Märkte…')])[1]",
+    "(//div[normalize-space()='Australien'])[1]",
+    "(//span[normalize-space()='Anwenden'])[1]",
     "(//div[normalize-space()='Index'])[1]",
-    "(//span[normalize-space()='FTSEMIB'])[1]",
+    "(//span[@class='box-ywH2tsV_ check-ywH2tsV_ disableActiveStyles-ywH2tsV_'])[1]"
 ]
 
 for xpath in actions:
@@ -60,7 +59,7 @@ data = [
 ]
 
 if data:
-    pd.DataFrame(data, columns=['Spalte 2', 'Spalte 5']).to_csv('ausgewaehlte_spaltenit.csv', index=False)
+    pd.DataFrame(data, columns=['Spalte 2', 'Spalte 5']).to_csv('ausgewaehlte_spaltenau.csv', index=False)
     df = pd.DataFrame(data, columns=['Spalte 2', 'Spalte 5'])
     #print(df)
     

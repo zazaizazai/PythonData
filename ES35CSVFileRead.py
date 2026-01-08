@@ -53,8 +53,8 @@ print(f"Average Product per Row: {average_product}")
 
 # Definieren Sie mehrere Pfade als Liste
 file_paths = [
-    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/81A933A9AFC5DE3C23B15CAB19C63850/MQL5/Files/TVsup.txt",
-    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/D0E8209F77C8CF37AD8BF550E51FF075/MQL5/Files/TVesp.txt",
+    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/81A933A9AFC5DE3C23B15CAB19C63850/MQL5/Files/TVesp.txt",
+    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/FB52B33C7584E2EEADD1C5E58004AD52/MQL5/Files/TVesp.txt",
     "C:/Users/farha/AppData/Roaming/MetaQuotes/Terminal/C4CE7E5647DA1EB91E3C2593C03B1A28/MQL4/Files/TVesp.txt",
     "C:/Ein/Weiterer/Pfad/TVdax.txt"  # Hier können Sie weitere Pfade hinzufügen
 ]

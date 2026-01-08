@@ -17,7 +17,7 @@ def send_telegram_message(token, chat_id, message):
         print(f"Fehler beim Senden der Nachricht: {response.status_code}")
 
 # Beispiel: Nachricht senden
-token = '7520112354:AAF63MXdHYmDg_oCqsuZeaV8MXm1ltYRXC4'  # Dein Bot-Token von BotFather
+token = '7520112354:AAEDNYR-g1Umrw700SRp1EWkzShh0fDAWn8'  # Dein Bot-Token von BotFather
 chat_ids = ['7215156375']  # Liste der Chat-IDs
 #chat_id = '7215156375'  # Deine Chat-ID
 

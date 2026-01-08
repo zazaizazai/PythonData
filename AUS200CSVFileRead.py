@@ -2,8 +2,7 @@ import csv
 import os
 
 def clean_and_convert(value, type):
-    value = value.replace('â€¯', '').replace('â€', '').replace('”', '0').replace('USD', '').replace('âˆ’', '-').replace('%', '').strip()
-    value = value.replace('â€¯', '').replace('EUR', '').replace('âˆ’', '-').replace('%', '').strip()
+    value = value.replace('â€¯', '').replace('â€', '').replace('”', '0').replace('AUD', '').replace('âˆ’', '-').replace('%', '').strip()
     value = value.replace(',', '.')  # Einheitliche Behandlung des Dezimaltrennzeichens
     
     if type == 'currency':
@@ -16,14 +15,14 @@ def clean_and_convert(value, type):
             return float(value.replace('T', '')) * 1000  # Billionen
         return float(value)
     elif type == 'percentage':
-        return float(value) / 100
+        return float(value) 
 
 # Hauptteil des Skripts
 total_currency = 0  # Akkumulator für die Summe der Währungswerte
 total_product = 0   # Akkumulator für die Summe der Produkte von Spalte 2 und Spalte 5
 row_count = 0       # Zähler für die Anzahl der Zeilen
 
-with open('ausgewaehlte_spaltenit.csv', 'r') as csv_file:
+with open('ausgewaehlte_spaltenau.csv', 'r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     for line in csv_reader:
         # Extrahiere und konvertiere Werte aus beiden Spalten
@@ -49,13 +48,13 @@ print(f"Total Rows : {row_count}")
 # Gib die Gesamtsumme der Spalte 5, das Gesamtprodukt und den Durchschnitt aus
 #print(f"Total Currency Value in Spalte 5: {total_currency}")
 #print(f"Total Product of Spalte 2 and Spalte 5: {total_product}")
-print(f"Average Product per Row: {average_product}")
+#print(f"Average Product per Row: {average_product}")
 
 # Definieren Sie mehrere Pfade als Liste
 file_paths = [
-    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/81A933A9AFC5DE3C23B15CAB19C63850/MQL5/Files/TVita.txt",
-    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/FB52B33C7584E2EEADD1C5E58004AD52/MQL5/Files/TVita.txt",
-    "C:/Users/farha/AppData/Roaming/MetaQuotes/Terminal/C4CE7E5647DA1EB91E3C2593C03B1A28/MQL4/Files/TVita.txt",
+    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/81A933A9AFC5DE3C23B15CAB19C63850/MQL5/Files/TVau.txt",
+    "C:/Users/fawad/AppData/Roaming/MetaQuotes/Terminal/FB52B33C7584E2EEADD1C5E58004AD52/MQL5/Files/TVau.txt",
+    "C:/Users/Fawad/AppData/Roaming/MetaQuotes/Terminal/D0E8209F77C8CF37AD8BF550E51FF075/MQL5/Files/TVau.txt",
     "C:/Ein/Weiterer/Pfad/TVdax.txt"  # Hier können Sie weitere Pfade hinzufügen
 ]
 

@@ -14,7 +14,7 @@ website = "https://de.tradingview.com/screener/"
 
 # Nutze ein separates, frisches Profil (empfohlen), NICHT dein Alltagsprofil.
 # Falls du dein Profil erzwingen willst, ersetze den Pfad unten durch deinen.
-user_data_dir = r"D:\Selenium\ChromeProfile_TV"  # lege diesen Ordner neu an
+user_data_dir = r"D:\Selenium\ChromeProfile_TV1"  # lege diesen Ordner neu an
 
 # =========================
 # Browser starten
@@ -28,14 +28,16 @@ wait = WebDriverWait(driver, 30)
 driver.get(website)
 
 actions = [
-    "(//div[@class='primaryText-Du_FoeNz primary-Ms2EU9Vx'][normalize-space()='Markt'])[1]",
-    "(//div[contains(text(),'Weitere Märkte…')])[1]",
+    "(//div[@class='layout-oI7yDzzq'])[1]",
+    "(//span[normalize-space()='Die gesamte Welt'])[1]",
+    "(//div[@class='layout-oI7yDzzq'])[1]",
+    "(//div[@class='title-LSK1huUA ellipsis-K3hWbfcy apply-overflow-tooltip'])",
     "(//div[normalize-space()='Deutschland'])[1]",
-    "(//span[normalize-space()='Anwenden'])[1]",
     "(//div[normalize-space()='Index'])[1]",
-    "(//span[@class='box-ywH2tsV_ check-ywH2tsV_ disableActiveStyles-ywH2tsV_'])[2]",
-    "(//div[@class='primaryText-Du_FoeNz primary-Ms2EU9Vx'][normalize-space()='Markt'])[1]",
-    "(//div[contains(text(),'Die gesamte Welt')])[1]"
+    "(//span[normalize-space()='SX5P'])[1]",
+    "(//div[@class='layout-oI7yDzzq'])[1]",
+    "(//span[normalize-space()='Die gesamte Welt'])[1]",
+
 ]
 
 for xpath in actions:
