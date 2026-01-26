@@ -34,4 +34,4 @@ while True:
     for script in scripts:
         run_script(script, error_script)
     print("Warte bis zum nächsten Lauf...")
-    time.sleep(5)  # Warte 
+    time.sleep(3)  # Warte 
