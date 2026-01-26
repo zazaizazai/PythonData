@@ -14,7 +14,7 @@ website = "https://de.tradingview.com/screener/"
 
 # Nutze ein separates, frisches Profil (empfohlen), NICHT dein Alltagsprofil.
 # Falls du dein Profil erzwingen willst, ersetze den Pfad unten durch deinen.
-user_data_dir = r"D:\Selenium\ChromeProfile_TV1"  # lege diesen Ordner neu an
+user_data_dir = r"D:\Selenium\ChromeProfile_TV3"  # lege diesen Ordner neu an
 
 # =========================
 # Browser starten
@@ -26,6 +26,7 @@ driver = webdriver.Chrome(options=options)  # kein Service(driver_path)! Seleniu
 wait = WebDriverWait(driver, 30)
 
 driver.get(website)
+
 
 actions = [
     "(//div[@class='layout-oI7yDzzq'])[1]",

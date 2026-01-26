@@ -23,7 +23,8 @@ scripts = [
     'NASData.py', 'NASCSVFileRead.py', 'NIKKEIData.py', 'NIKKEICSVFileRead.py',
     'DAXData.py', 'DAXCSVFileRead.py', 'UK100Data.py', 'UK100CSVFileRead.py',
     'HSI80Data.py', 'HSI80CSVFileRead.py', 'FRENCH40Data.py', 'FRENCH40CSVFileRead.py',
-    'ES35Data.py', 'ES35CSVFileRead.py', 'ITA40Data.py', 'ITA40CSVFileRead.py', 'EURX50Data.py', 'EURX50CSVFileRead.py', 'N25Data.py', 'N25CSVFileRead.py'
+    'ES35Data.py', 'ES35CSVFileRead.py', 'ITA40Data.py', 'ITA40CSVFileRead.py', 'EURX50Data.py', 
+    'EURX50CSVFileRead.py', 'N25Data.py', 'N25CSVFileRead.py', 'SUI20Data.py', 'SUI20CSVFileRead.py'
 ]
 
 # Pfad des Fehlerbehandlungs-Skripts
