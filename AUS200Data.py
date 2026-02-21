@@ -14,7 +14,7 @@ website = "https://de.tradingview.com/screener/"
 
 # Nutze ein separates, frisches Profil (empfohlen), NICHT dein Alltagsprofil.
 # Falls du dein Profil erzwingen willst, ersetze den Pfad unten durch deinen.
-user_data_dir = r"D:\Selenium\ChromeProfile_TV2"  # lege diesen Ordner neu an
+user_data_dir = r"D:\Selenium\ChromeProfile_TV4"  # lege diesen Ordner neu an
 
 # =========================
 # Browser starten

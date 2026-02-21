@@ -14,7 +14,7 @@ website = "https://de.tradingview.com/screener/"
 
 # Nutze ein separates, frisches Profil (empfohlen), NICHT dein Alltagsprofil.
 # Falls du dein Profil erzwingen willst, ersetze den Pfad unten durch deinen.
-user_data_dir = r"D:\Selenium\ChromeProfile_TV3"  # lege diesen Ordner neu an
+user_data_dir = r"D:\Selenium\ChromeProfile_TV6"  # lege diesen Ordner neu an
 
 # =========================
 # Browser starten
@@ -31,8 +31,8 @@ actions = [
     "(//div[@class='layout-oI7yDzzq'])[1]",
     "(//span[normalize-space()='Die gesamte Welt'])[1]",
     "(//div[@class='layout-oI7yDzzq'])[1]",
-    "(//div[@class='title-LSK1huUA ellipsis-K3hWbfcy apply-overflow-tooltip'])",
     "(//div[normalize-space()='Hong Kong, China'])[1]",
+    "(//div[@class='layout-oI7yDzzq'])[1]",
     "(//div[normalize-space()='Index'])[1]",
     "(//span[normalize-space()='HSI'])[1]",
 ]
